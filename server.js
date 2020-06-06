@@ -42,7 +42,7 @@ app.get('/pets/:petName', function(req, res, next){
     var petName = req.params.petName;
 
     if(petData[petName]){
-        res.status(200).render("individualPet", {
+        res.status(200).render("individualPetPage", {
             pets: [petData[petName]]
         });
     }

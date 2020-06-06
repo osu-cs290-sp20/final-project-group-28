@@ -6,7 +6,7 @@ var app = express();
 var port = process.env.PORT || 5522;
 var petData = require('./petInfo');     //from petData.json
 
-app.engine('handlebars', exphbs({defaultLayout: 'null' }));
+app.engine('handlebars', exphbs({defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));

@@ -44,8 +44,8 @@ app.get('/pets/:petName', function(req, res, next){
     var petIndex = parseInt(petName, 10);
     
     if(Number.isNaN(petIndex)){
-    console.log('==Pets Name sent is: ', petName);
-    console.log('==Pets Name type is: ', typeof(petName));
+    //console.log('==Pets Name sent is: ', petName);
+    //console.log('==Pets Name type is: ', typeof(petName));
     var i = 0;
     petData.forEach(function checkName(pet) {
         if(pet.petName == petName){
@@ -58,8 +58,8 @@ app.get('/pets/:petName', function(req, res, next){
     });
     }else{
    
-    console.log('==Pets Index sent is: ', petIndex);
-    console.log('==Pets Index type is: ', typeof(petIndex));
+    //console.log('==Pets Index sent is: ', petIndex);
+    //console.log('==Pets Index type is: ', typeof(petIndex));
     if(petIndex != NaN && petData.length > petIndex){
             res.status(200).render("individualPetPage", {
                 pets: [petData[petIndex]]

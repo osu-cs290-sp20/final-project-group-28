@@ -1,0 +1,38 @@
+[
+  {
+    "PetName": "Samuel",
+    "ProfilePic": "https://i.imgur.com/nJKDfs3.jpg",
+    "Species": "Dog",
+    "Breed": "Doge",
+    "FavToy": "a Rope",
+    "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+
+  },
+  {
+    "PetName": "Liz",
+    "ProfilePic": "https://www.thesprucepets.com/thmb/YC1f3rLV_bIBlPLo3i8Z62SMr2c=/1881x1411/smart/filters:no_upscale()/Pet-iguana-GettyImages-175673540-58b1ddee5f9b5860463c2188.jpg",
+    "Species": "Gecko",
+    "Breed": "Small-footed",
+    "FavToy": "Heat Lamp",
+    "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+
+  },
+  {
+    "PetName": "Samuel",
+    "ProfilePic": "https://i.imgur.com/nJKDfs3.jpg",
+    "Species": "Dog",
+    "Breed": "Doge",
+    "FavToy": "a Rope",
+    "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+
+  },
+  {
+    "PetName": "Samuel",
+    "ProfilePic": "https://i.imgur.com/nJKDfs3.jpg",
+    "Species": "Dog",
+    "Breed": "Doge",
+    "FavToy": "a Rope",
+    "Bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+
+  }
+]

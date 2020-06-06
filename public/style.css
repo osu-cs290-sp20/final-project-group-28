@@ -1,5 +1,5 @@
 body {
-    font-family: Tahoma, Verdana, Segoe, sans-serif;;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: white;
     margin: 0;
 }
@@ -39,10 +39,50 @@ a:focus {
   color: white;
 }
 
+
+.pet-card {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(64, 223, 215);
+}
+
+    .pet-card:hover * {
+        font-size: xx-large;
+        color: black;
+        background-color: lightcoral;
+        max-height: 210px;
+    }
+    .pet-card:hover {
+        font-size: xx-large;
+        color: black;
+        background-color: lightcoral;
+    }
+    .pet-card * {
+        font-size: x-large;
+        color: black;
+        background-color: rgb(64, 223, 215);
+        max-height: 200px;
+    }
+
+
+
 .individual-page {
     background-color: white;
     text-align: center;
 }
+.list-page {
+    background-color: white;
+    text-align: center;
+    margin: 50px 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
 .pet-name{
     font-size: x-large;
     padding-bottom: 0px;

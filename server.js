@@ -37,13 +37,13 @@ app.get('/about', function(req,res){
 });
 
 
-//individual pet page
-app.get('/pets/:pet', function(req, res, next){
-    var pet = req.params.pet;
+//individual pet page. Goes to pet based off their name
+app.get('/pets/:petName', function(req, res, next){
+    var petName = req.params.petName;
 
-    if(petData[pet]){
+    if(petData[petName]){
         res.status(200).render("individualPet", {
-            pets: [petData[pets]]
+            pets: [petData[petName]]
         });
     }
     else{

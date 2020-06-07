@@ -102,3 +102,15 @@ a:focus {
 .info-text {
     padding-left: 60px;
 }
+
+.home-page{
+        text-align: center;
+}
+.random-pet-button {
+    background-color: rgb(64, 223, 215);
+    border: 3px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}

@@ -48,23 +48,26 @@ a:focus {
     background-color: rgb(64, 223, 215);
 }
 
-    .pet-card:hover * {
-        font-size: xx-large;
-        color: black;
-        background-color: lightcoral;
-        max-height: 210px;
-    }
-    .pet-card:hover {
-        font-size: xx-large;
-        color: black;
-        background-color: lightcoral;
-    }
-    .pet-card * {
-        font-size: x-large;
-        color: black;
-        background-color: rgb(64, 223, 215);
-        max-height: 200px;
-    }
+.pet-card * {
+    font-size: x-large;
+    color: black;
+    background-color: rgb(64, 223, 215);
+    max-height: 200px;
+}
+
+.pet-card:hover * {
+    font-size: xx-large;
+    color: black;
+    background-color: lightcoral;
+    max-height: 210px;
+}
+
+.pet-card:hover {
+    font-size: xx-large;
+    color: black;
+    background-color: lightcoral;
+}
+
 
 
 

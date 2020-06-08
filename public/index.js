@@ -35,8 +35,28 @@ function hidePetModal() {
   clearPetInputValues();
 }
 
+
 function handleModalAcceptClick() {
-  
+  var name = document.getElementById('name-text-input').value;
+  var petPhotoURL = document.getElementById('pet-photo-url-input').value;
+  /*var petSpecies = document.getElementById('pet-species-input').value;
+  var petBreed = document.getElementById('pet-breed-input').value;
+  var petFavoriteToy = document.getElementById('pet-favorite-toy-input').value;
+  var petBio = document.getElementById('pet-bio-input').value;*/
+
+  var petCardContext = {
+    petName: name,
+    profilePic: petPhotoURL
+  };
+
+  console.log(name);
+  console.log(petPhotoURL);
+
+  var petCardHtml = Handlebars.templates.petCardTemplate(petCardContext);
+  var petContainer = document.querySelector('main.list-page');
+  petContainer.insertAdjacentHTML('beforeend', petCardHtml);
+
+  hidePetModal();
 }
 
 window.addEventListener('DOMContentLoaded', function () {

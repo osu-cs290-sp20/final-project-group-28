@@ -80,9 +80,6 @@ a:focus {
     flex-wrap: wrap;
 }
 
-
-
-
 .pet-name{
     font-size: x-large;
     padding-bottom: 0px;
@@ -103,11 +100,21 @@ a:focus {
     padding-left: 60px;
 }
 
-.home-page{
+.home-page,
+#pet-page-welcome {
         text-align: center;
 }
-.random-pet-button,
-.add-pet-button {
+
+#add-pet-link {
+    color: lightcoral;
+    cursor:pointer;
+}
+
+#add-pet-link:hover {
+    font-size: 20px;
+}
+
+.random-pet-button {
     background-color: rgb(64, 223, 215);
     border: 3px solid black;
     color: black;
@@ -117,10 +124,21 @@ a:focus {
     cursor: pointer;
 }
 
-.random-pet-button:hover,
-.add-pet-button:hover {
+.random-pet-button:hover {
     height: 60px;
     width: 180px;
+}
+
+.add-pet-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: 3px solid black;
+    color: white;
+    font-weight: 600;
 }
 
 #modal-backdrop {
@@ -234,11 +252,11 @@ a:focus {
   }
   
   .modal-footer .modal-accept-button {
-    background-color: rgb(64, 223, 215);
-    color: black;
+    background-color: black;
+    color: white;
   }
   
   .modal-footer .modal-accept-button:hover {
-    background-color: rgb(66, 209, 202);
+    background-color: rgb(51, 51, 51);
   }
   

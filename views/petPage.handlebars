@@ -1,3 +1,12 @@
+{{!<button type="button" class="add-pet-button" id="add-pet-button">Add A Pet!</button>}}
+
+<div id="pet-page-welcome">
+<h2>Welcome to the pet page!</h2>
+<p>If you're looking to adopt, please view the pets listed below. If you know a pet that needs a home 
+    click <a id="add-pet-link">here</a> to add a pet listing to the page.
+</p>
+</div>
+
 <main class="list-page">
 
     {{#each pets}}
@@ -7,3 +16,47 @@
     {{/each}}
 
 </main>
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="create-pet-modal" class="hidden">
+    <div class="modal-dialog">
+
+        <div class="modal-header">
+            <h3>Put Pet Up for Adoption</h3>
+            <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <div class="pet-input-element">
+                <label for="name-text-input">Pet Name</label>
+                <input type="text" id="name-text-input"></textarea>
+            </div>
+            <div class="pet-input-element">
+                <label for="pet-photo-url-input">Pet Photo URL</label>
+                <input type="text" id="pet-photo-url-input">
+            </div>
+            <div class="pet-input-element">
+                <label for="pet-species-input">Species</label>
+                <input type="text" id="pet-species-input">
+            </div>
+            <div class="pet-input-element">
+                <label for="pet-breed-input">Breed</label>
+                <input type="text" id="pet-breed-input">
+            </div>
+            <div class="pet-input-element">
+                <label for="pet-favorite-toy-input">Favorite Toy</label>
+                <input type="text" id="pet-favorite-toy-input">
+            </div>
+            <div class="pet-input-element">
+                <label for="pet-bio-input">Pet Bio</label>
+                <textarea id="pet-bio-input"></textarea>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="modal-cancel-button">Cancel</button>
+            <button type="button" class="modal-accept-button">Add Pet</button>
+        </div>
+
+    </div>
+</div>

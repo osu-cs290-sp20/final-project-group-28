@@ -35,13 +35,17 @@ function hidePetModal() {
   clearPetInputValues();
 }
 
+function handleModalAcceptClick() {
+  
+}
+
 window.addEventListener('DOMContentLoaded', function () {
   var RandomProfButton = document.getElementById('random-pet-button');
   if (RandomProfButton) {
         RandomProfButton.addEventListener('click', RedirectToRandomProfile);
   }
 
-  var addPetButton = document.getElementById('add-pet-button');
+  var addPetButton = document.getElementById('add-pet-link');
   if (addPetButton) {
     addPetButton.addEventListener('click', showAddPetModal);
   }
@@ -55,4 +59,10 @@ window.addEventListener('DOMContentLoaded', function () {
   if (modalCancalButton) {
     modalCancalButton.addEventListener('click', hidePetModal);
   }
+
+  var modalAcceptButton = document.querySelector('#create-pet-modal .modal-accept-button');
+  if (modalAcceptButton) {
+    modalAcceptButton.addEventListener('click', handleModalAcceptClick);
+  }
+
 });

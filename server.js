@@ -1,6 +1,7 @@
 var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
+var fs = require('fs');
 
 var app = express();
 var port = process.env.PORT || 5522;
@@ -80,6 +81,12 @@ app.post('/pets/addPet', function(req, res, next) {
             favToy: req.body.toy,
             bio: req.body.bio
         });
+
+        fs.writeFile('petInfo.json', JSON.stringify(petData), function(err) {
+            if (err) throw err;
+            console.log('File updated.');
+        });
+
         res.status(200).send("Pet successfully added");
     } else {
         res.status(400).send("This requests needs a name, url, species, breed, toy and bio.");

@@ -10,7 +10,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
-
+app.use(express.json());
 
 
 //home page
@@ -27,7 +27,6 @@ app.get('/pets', function(req, res){
         pets: petData
     });
 });
-
 
 //about page
 app.get('/about', function(req,res){
@@ -70,6 +69,22 @@ app.get('/pets/:petName', function(req, res, next){
     }
 });
 
+//Adding a pet card
+app.post('/pets/addPet', function(req, res, next) {
+    if (req.body && req.body.name && req.body.url && req.body.species && req.body.breed && req.body.toy && req.body.bio) {
+        petData.push({
+            petName: req.body.name,
+            profilePic: req.body.url,
+            species: req.body.species,
+            breed: req.body.breed,
+            favToy: req.body.toy,
+            bio: req.body.bio
+        });
+        res.status(200).send("Pet successfully added");
+    } else {
+        res.status(400).send("This requests needs a name, url, species, breed, toy and bio.");
+    }
+});
 
 //404 page
 app.get('*', function(req,res) {

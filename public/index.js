@@ -38,31 +38,56 @@ function hidePetModal() {
 
 function handleModalAcceptClick() {
   var name = document.getElementById('name-text-input').value;
-  var petPhotoURL = document.getElementById('pet-photo-url-input').value;
-  /*var petSpecies = document.getElementById('pet-species-input').value;
-  var petBreed = document.getElementById('pet-breed-input').value;
-  var petFavoriteToy = document.getElementById('pet-favorite-toy-input').value;
-  var petBio = document.getElementById('pet-bio-input').value;*/
+  var url = document.getElementById('pet-photo-url-input').value;
+  var species = document.getElementById('pet-species-input').value;
+  var breed = document.getElementById('pet-breed-input').value;
+  var toy = document.getElementById('pet-favorite-toy-input').value;
+  var bio = document.getElementById('pet-bio-input').value;
 
-  var petCardContext = {
-    petName: name,
-    profilePic: petPhotoURL
-  };
+  if (!name || !url || !species || !breed || !toy || !bio) {
+    alert("You must fill in all of the fields")
+  } else {
+    var request = new XMLHttpRequest();
+    var requestURL = "/pets/addPet";
+    request.open('POST', requestURL);
 
-  console.log(name);
-  console.log(petPhotoURL);
+    var requestBody = JSON.stringify({
+      name: name,
+      url: url,
+      species: species,
+      breed: breed,
+      toy: toy,
+      bio: bio
+    });
 
-  var petCardHtml = Handlebars.templates.petCardTemplate(petCardContext);
-  var petContainer = document.querySelector('main.list-page');
-  petContainer.insertAdjacentHTML('beforeend', petCardHtml);
+    request.setRequestHeader(
+      'Content-Type',
+      'application/json'
+    );
 
-  hidePetModal();
+    request.addEventListener('load', function (event) {
+      if (event.target.status === 200) {
+        var petCardContext = {
+          petName: name,
+          profilePic: url
+        };
+        var petCardHtml = Handlebars.templates.petCardTemplate(petCardContext);
+        var petContainer = document.querySelector('main.list-page');
+        petContainer.insertAdjacentHTML('beforeend', petCardHtml);
+      } else {
+        alert("Error storing photo in database: " + event.target.response);
+      }
+    });
+
+    request.send(requestBody);
+    hidePetModal();
+  }
 }
 
 window.addEventListener('DOMContentLoaded', function () {
   var RandomProfButton = document.getElementById('random-pet-button');
   if (RandomProfButton) {
-        RandomProfButton.addEventListener('click', RedirectToRandomProfile);
+    RandomProfButton.addEventListener('click', RedirectToRandomProfile);
   }
 
   var addPetButton = document.getElementById('add-pet-link');

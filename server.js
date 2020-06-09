@@ -93,6 +93,14 @@ app.post('/pets/addPet', function(req, res, next) {
     }
 });
 
+app.get('/PetCount', function(req, res, next) {
+        res.status(200).send({
+            petCount: petData.length
+        });
+});
+
+
+
 //404 page
 app.get('*', function(req,res) {
     res.status(404).render('404');

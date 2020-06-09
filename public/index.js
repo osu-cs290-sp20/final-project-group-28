@@ -1,8 +1,33 @@
 function RedirectToRandomProfile() {
-  var max = 5;
-  var num = Math.floor(Math.random() * Math.floor(max))
-  var string = '/pets/' + num;
-  window.location.href = string;
+
+    var request = new XMLHttpRequest();
+    var requestURL = "./PetCount";
+    request.open('GET', requestURL);
+
+
+    request.setRequestHeader(
+      'Content-Type',
+      'application/json'
+    );
+
+    request.addEventListener('load', function (req) {
+      if (req.target.status === 200) {
+            var max = 5;
+
+          if (JSON.parse(request.responseText).petCount){
+
+            max = JSON.parse(request.responseText).petCount;
+
+          }
+          var num = Math.floor(Math.random() * Math.floor(max))
+          var string = '/pets/' + num;
+          window.location.href = string;
+        }
+    });
+
+    request.send();
+
+
 }
 
 function showAddPetModal() {

@@ -26,8 +26,6 @@ function RedirectToRandomProfile() {
     });
 
     request.send();
-
-
 }
 
 function showAddPetModal() {
@@ -109,6 +107,19 @@ function handleModalAcceptClick() {
   }
 }
 
+function handleAdoptClick() {
+  
+  var name = document.getElementById('pet-name-text');
+ // console.log(name.innerHTML);
+  var request = new XMLHttpRequest();
+  var requestURL = "/pets/" + name.innerHTML + "/adoptPet";
+ // console.log(requestURL);
+  request.open('POST', requestURL);
+
+  request.send();
+
+}
+
 window.addEventListener('DOMContentLoaded', function () {
   var RandomProfButton = document.getElementById('random-pet-button');
   if (RandomProfButton) {
@@ -135,4 +146,8 @@ window.addEventListener('DOMContentLoaded', function () {
     modalAcceptButton.addEventListener('click', handleModalAcceptClick);
   }
 
+  var adoptPetButton = document.querySelector('.adopt-pet-button');
+  if (adoptPetButton) {
+    adoptPetButton.addEventListener('click', handleAdoptClick);
+  }
 });

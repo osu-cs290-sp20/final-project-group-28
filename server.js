@@ -93,6 +93,25 @@ app.post('/pets/addPet', function(req, res, next) {
     }
 });
 
+app.post('/pets/:name/adoptPet', function(req, res, next) {
+    var petName = req.params.name;
+    var i = 0;
+    petData.forEach(function checkName(pet){
+        if (pet.petName === petName) {
+            petData.splice(i,1);
+            return;
+        }
+        i++;
+    });
+   
+    fs.writeFile('petInfo.json', JSON.stringify(petData, null, 2), function(err) {
+        if (err) throw err;
+        console.log('File updated.');
+    });
+
+    res.status(200).send("Pet successfully removed");
+});
+
 app.get('/PetCount', function(req, res, next) {
     res.status(200).send({
         petCount: petData.length

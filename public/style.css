@@ -9,6 +9,11 @@ a {
     color: black;
 }
 
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 .site-title {
     color: white;
     background-color: rgb(64, 223, 215);
@@ -39,37 +44,55 @@ a:focus {
   color: white;
 }
 
-.adopt-body,
+.title-container{
+  text-align: center;
+  }
+
+.topper-text{
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 150%;
+  padding: 5px;
+  text-align: center;
+  width: 40%;
+  background-color: rgb(247, 187, 187);
+  border-radius: 3px;
+  border: 3px solid rgb(240, 128, 128);
+  }
+  
+}
 .error-container {
   margin: 40px;
+  text-align: center;
 }
 
 .pet-card {
     margin: 30px;
     padding: 10px;
-    border: 1px solid black;
+    border: 4px solid rgb(64, 223, 215);
     border-radius: 3px;
-    background-color: rgb(64, 223, 215);
+    background-color: rgb(124, 233, 227);
 }
 
 .pet-card * {
     font-size: x-large;
     color: black;
-    background-color: rgb(64, 223, 215);
+
     max-height: 200px;
 }
 
 .pet-card:hover * {
     font-size: xx-large;
     color: black;
-    background-color: lightcoral;
+    background-color: rgb(247, 187, 187);
     max-height: 210px;
 }
 
 .pet-card:hover {
     font-size: xx-large;
     color: black;
-    background-color: lightcoral;
+    border: 4px solid rgb(240, 128, 128);
+    background-color: rgb(247, 187, 187);
 }
 
 .individual-page {
@@ -77,6 +100,7 @@ a:focus {
     text-align: center;
 }
 .list-page {
+    justify-content: center;
     background-color: white;
     text-align: center;
     margin: 50px 2%;
@@ -91,17 +115,33 @@ a:focus {
 .pet-image{
     max-height:270px;
 }
+
+.pet-info-wrapper{
+    margin: auto;
+    margin-bottom: 0px;
+    line-height: 150%;
+    padding: 5px;
+    text-align: center;
+    width: 400px;
+    background-color: rgb(247, 187, 187);
+    border-radius: 10px;
+    border: 3px solid rgb(240, 128, 128);
+}
 .pet-info {
     text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 40px;
 }
 .info-title{
     font-size:large;
     font-weight:bold;
+    display: inline;
 }
 .info-text {
-    padding-left: 60px;
+    padding-left: 10px;
+    display: inline;
 }
 
 .home-page,
@@ -110,7 +150,8 @@ a:focus {
 }
 
 #add-pet-link {
-    color: lightcoral;
+    color: rgb(64, 223, 215);
+    font-weight: 900;
     cursor:pointer;
 }
 
@@ -119,8 +160,10 @@ a:focus {
 }
 
 .random-pet-button {
-    background-color: rgb(64, 223, 215);
-    border: 3px solid black;
+    outline: rgb(64, 223, 215);
+    border: 4px solid rgb(64, 223, 215);
+    border-radius: 3px;
+    background-color: rgb(124, 233, 227);
     color: black;
     padding: 15px 32px;
     text-align: center;
@@ -131,8 +174,17 @@ a:focus {
 .random-pet-button:hover {
     height: 60px;
     width: 180px;
+    border: 4px solid rgb(124, 233, 227);
+    border-radius: 3px;
+    background-color: rgb(64, 223, 215);
 }
 
+.random-pet-button:focus {
+    border: 4px solid rgb(124, 233, 227);
+    border-radius: 3px;
+    background-color: rgb(64, 223, 215);
+}
+    
 .add-pet-button {
     position: fixed;
     right: 30px;

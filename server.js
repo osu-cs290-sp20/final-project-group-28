@@ -108,7 +108,7 @@ app.post('/pets/:name/adoptPet', function(req, res, next) {
         if (err) throw err;
         console.log('File updated.');
     });
-
+    alert("You successfully adopted");
     res.status(200).send("Pet successfully removed");
 });
 

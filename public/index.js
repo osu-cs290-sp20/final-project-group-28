@@ -68,7 +68,7 @@ function handleModalAcceptClick() {
   var bio = document.getElementById('pet-bio-input').value;
 
   if (!name || !url || !species || !breed || !toy || !bio) {
-    alert("You must fill in all of the fields")
+    alert("You must fill in all of the fields");
   } else {
     var request = new XMLHttpRequest();
     var requestURL = "/pets/addPet";
@@ -115,8 +115,10 @@ function handleAdoptClick() {
   var requestURL = "/pets/" + name.innerHTML + "/adoptPet";
  // console.log(requestURL);
   request.open('POST', requestURL);
-
+  alert("You successfully adopted " + name.innerHTML);
   request.send();
+
+  window.location.href = "./";
 
 }
 

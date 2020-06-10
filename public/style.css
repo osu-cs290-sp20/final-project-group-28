@@ -150,9 +150,10 @@ a:focus {
 }
 
 #add-pet-link {
-    color: rgb(64, 223, 215);
+    color: white;
     font-weight: 900;
     cursor:pointer;
+    text-decoration: underline;
 }
 
 #add-pet-link:hover {

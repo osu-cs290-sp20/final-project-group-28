@@ -93,6 +93,7 @@ app.post('/pets/addPet', function(req, res, next) {
     }
 });
 
+//adopt a pet (remove pet from json)
 app.post('/pets/:name/adoptPet', function(req, res, next) {
     var petName = req.params.name;
     var i = 0;

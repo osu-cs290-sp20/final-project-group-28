@@ -38,33 +38,33 @@ app.get('/about', function(req,res){
 //individual pet page. Goes to pet based off their name
 app.get('/pets/:petName', function(req, res, next){
     var petName = req.params.petName;
-    
+
     var petIndex = parseInt(petName, 10);
-    
+
     if(Number.isNaN(petIndex)){
-    //console.log('==Pets Name sent is: ', petName);
-    //console.log('==Pets Name type is: ', typeof(petName));
-    var i = 0;
-    petData.forEach(function checkName(pet) {
-        if(pet.petName == petName){
-            res.status(200).render("individualPetPage", {
-                pets: [petData[i]]
-            });
-            return;
-        }
-        i++;
-    });
+        //console.log('==Pets Name sent is: ', petName);
+        //console.log('==Pets Name type is: ', typeof(petName));
+        var i = 0;
+        petData.forEach(function checkName(pet) {
+            if(pet.petName == petName){
+                res.status(200).render("individualPetPage", {
+                    pets: [petData[i]]
+                });
+                return;
+            }
+            i++;
+        });
     }else{
-   
-    //console.log('==Pets Index sent is: ', petIndex);
-    //console.log('==Pets Index type is: ', typeof(petIndex));
-    if(petIndex != NaN && petData.length > petIndex){
+
+        //console.log('==Pets Index sent is: ', petIndex);
+        //console.log('==Pets Index type is: ', typeof(petIndex));
+        if(petIndex != NaN && petData.length > petIndex){
             res.status(200).render("individualPetPage", {
                 pets: [petData[petIndex]]
             });
-    }else{
-        next();
-    }
+        }else{
+            next();
+        }
     }
 });
 
@@ -92,9 +92,9 @@ app.post('/pets/addPet', function(req, res, next) {
 });
 
 app.get('/PetCount', function(req, res, next) {
-        res.status(200).send({
-            petCount: petData.length
-        });
+    res.status(200).send({
+        petCount: petData.length
+    });
 });
 
 
@@ -109,4 +109,3 @@ app.get('*', function(req,res) {
 app.listen(port, function() {
     console.log('== Server is listening on port', port);
 });
-

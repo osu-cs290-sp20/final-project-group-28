@@ -39,6 +39,10 @@ a:focus {
   color: white;
 }
 
+.adopt-body,
+.error-container {
+  margin: 40px;
+}
 
 .pet-card {
     margin: 30px;
@@ -67,9 +71,6 @@ a:focus {
     color: black;
     background-color: lightcoral;
 }
-
-
-
 
 .individual-page {
     background-color: white;

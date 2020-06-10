@@ -39,20 +39,23 @@ app.get('/pets/:petName', function(req, res, next){
     var petName = req.params.petName;
 
     var petIndex = parseInt(petName, 10);
-
     if(Number.isNaN(petIndex)){
         //console.log('==Pets Name sent is: ', petName);
         //console.log('==Pets Name type is: ', typeof(petName));
         var i = 0;
+        var foundName = false;
         petData.forEach(function checkName(pet) {
             if(pet.petName == petName){
+                foundName = true;
                 res.status(200).render("individualPetPage", {
                     pets: [petData[i]]
                 });
-                return;
             }
             i++;
         });
+        if(!foundName){
+            next();  
+		}
     }else{
 
         //console.log('==Pets Index sent is: ', petIndex);

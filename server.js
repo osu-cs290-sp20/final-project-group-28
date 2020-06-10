@@ -2,7 +2,6 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 var fs = require('fs');
-
 var app = express();
 var port = process.env.PORT || 5522;
 var petData = require('./petInfo');     //from petInfo.json

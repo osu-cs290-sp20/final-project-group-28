@@ -17,7 +17,6 @@ app.use(express.json());
 //home page
 app.get('/', function(req, res){
     res.status(200).render('homePage', {
-        //stuff?
     });
 });
 
@@ -32,7 +31,6 @@ app.get('/pets', function(req, res){
 //about page
 app.get('/about', function(req,res){
     res.status(200).render('aboutPage', {
-        //stuff?
     });
 });
 
@@ -82,7 +80,7 @@ app.post('/pets/addPet', function(req, res, next) {
             bio: req.body.bio
         });
 
-        fs.writeFile('petInfo.json', JSON.stringify(petData), function(err) {
+        fs.writeFile('petInfo.json', JSON.stringify(petData, null, 2), function(err) {
             if (err) throw err;
             console.log('File updated.');
         });

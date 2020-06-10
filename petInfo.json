@@ -1,54 +1,58 @@
 [
-  {
-    "petName": "Samuel",
-    "profilePic": "https://cdn.pixabay.com/photo/2018/08/03/14/42/german-3582038_1280.jpg",
-    "species": "Dog",
-    "breed": "German Shepard",
-    "favToy": "a Rope",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-
-  },
-  {
-    "petName": "Liz",
-    "profilePic": "https://cdn.pixabay.com/photo/2020/01/22/12/15/gecko-4785198_1280.jpg",
-    "species": "Gecko",
-    "breed": "Green Gecko",
-    "favToy": "Heat Lamp",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-
-  },
-  {
-    "petName": "Greg",
-    "profilePic": "https://cdn.pixabay.com/photo/2016/11/19/15/20/animal-1839808_1280.jpg",
-    "species": "Dog",
-    "breed": "Golden Retriever",
-    "favToy": "Tennis Balls",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-
-  },
-  {
-    "petName": "Tim",
-    "profilePic": "https://cdn.pixabay.com/photo/2018/03/26/20/49/tiger-3264048_1280.jpg",
-    "species": "Cat",
-    "breed": "Tiger",
-    "favToy": "Cardboard Box",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-
-  },
-  {
-    "petName": "Zuckerburg",
-    "profilePic": "https://cdn.pixabay.com/photo/2019/11/08/19/09/bird-4612175_1280.jpg",
-    "species": "Lorikeet",
-    "breed": "Red and Green Lorikeet",
-    "favToy": "Bells",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-  },
-  {
-    "petName": "Dog-3000",
-    "profilePic": "https://cdn.pixabay.com/photo/2019/01/22/07/56/robot-3947585_1280.jpg",
-    "species": "Robot-Dog",
-    "breed": "Linux",
-    "favToy": "Sticks",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-  }
+   {
+      "petName": "Samuel",
+      "profilePic": "https://cdn.pixabay.com/photo/2018/08/03/14/42/german-3582038_1280.jpg",
+      "species": "Dog",
+      "breed": "German Shepard",
+      "favToy": "a Rope",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+   },
+   {
+      "petName": "Liz",
+      "profilePic": "https://cdn.pixabay.com/photo/2020/01/22/12/15/gecko-4785198_1280.jpg",
+      "species": "Gecko",
+      "breed": "Green Gecko",
+      "favToy": "Heat Lamp",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+   },
+   {
+      "petName": "Greg",
+      "profilePic": "https://cdn.pixabay.com/photo/2016/11/19/15/20/animal-1839808_1280.jpg",
+      "species": "Dog",
+      "breed": "Golden Retriever",
+      "favToy": "Tennis Balls",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+   },
+   {
+      "petName": "Tim",
+      "profilePic": "https://cdn.pixabay.com/photo/2018/03/26/20/49/tiger-3264048_1280.jpg",
+      "species": "Cat",
+      "breed": "Tiger",
+      "favToy": "Cardboard Box",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+   },
+   {
+      "petName": "Zuckerburg",
+      "profilePic": "https://cdn.pixabay.com/photo/2019/11/08/19/09/bird-4612175_1280.jpg",
+      "species": "Lorikeet",
+      "breed": "Red and Green Lorikeet",
+      "favToy": "Bells",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+   },
+   {
+      "petName": "Dog-3000",
+      "profilePic": "https://cdn.pixabay.com/photo/2019/01/22/07/56/robot-3947585_1280.jpg",
+      "species": "Robot-Dog",
+      "breed": "Linux",
+      "favToy": "Sticks",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+   },
+   {
+      "petName": "doggy",
+      "profilePic": "https://cdn.pixabay.com/photo/2015/06/08/15/02/pug-801826_960_720.jpg",
+      "species": "dog",
+      "breed": "pug",
+      "favToy": "shoes",
+      "bio": "hello there"
+   }
 ]
